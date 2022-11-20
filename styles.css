@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Montserrat:wght@500&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@700&family=Roboto:ital@0;1&display=swap");
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  color: rgba(255, 255, 255, 0.664);
+  font: normal 16px "Montserrat", sans-serif;
+  /* background:#23272e; */
+  height: 100vh;
+  background-color: #eee;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  /* text-align: center; */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(226, 224, 224);
+  opacity: 0.8;
+  margin: 3px;
+}
+
+.telega {
+  color: white;
+}
+
+a:hover {
+  fill: rgb(246, 115, 7);
+  stroke: rgb(246, 115, 7);
+  color: rgb(246, 115, 7);
+  border-bottom: 2px solid black;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+/* html {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+.avatar {
+  width: 350px;
+  border-radius: 55px;
+  background: linear-gradient(145deg, #303030, #292929);
+  box-shadow: 6px 6px 12px #262626, -6px -6px 12px #343434;
+}
+
+@media (max-width: 380px) {
+  .avatar {
+    width: 250px;
+  }
+}
+
+.info {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.info-text {
+  margin-left: 10px;
+  text-align: center;
+}
+.info-text h1 {
+  color: rgba(255, 255, 255, 0.932);
+}
+
+@media (max-width: 380px) {
+  .info-text {
+    margin-right: 1rem;
+  }
+}
+
+.info-text p {
+  font: italic bold;
+  margin: auto;
+}
+
+.info-text h3 {
+  margin-bottom: 10px;
+}
+
+.social {
+  margin-top: 170px;
+  margin-right: 20px;
+}
+@media (max-width: 658px) {
+  .social {
+    margin-right: 1rem;
+    margin-top: 20px;
+  }
+}
+
+.btn {
+  background: rgb(201, 109, 73);
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-a {
+  /* background: hsla(192, 55%, 62%, 0.164); */
+  border-radius: 15px;
+  padding: 0px 7px;
+  color: #fff;
+  /* transition: all 0.4s; */
+}
+.btn-a:hover {
+  opacity: 0.8;
+  fill: rgb(246, 115, 7);
+  /* font-size: 2.7rem; */
+}
+@media (max-width: 660px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.card {
+  border: 3px solid rgba(255, 255, 255, 0.673);
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.bg-blue {
+  background-color: rgba(32, 178, 171, 0.708);
+  color: rgb(240, 248, 255);
+  opacity: 0.9;
+  margin-top: 2rem;
+}
+
+.bg-pink {
+  background-color: rgba(240, 128, 128, 0.76);
+  color: rgb(240, 248, 255);
+  opacity: 0.9;
+}
+
+.list {
+  margin: 0;
+  padding: 0px 20px;
+}
+
+.list li {
+  margin-bottom: 2px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.table th:nth-child(1),
+.table th:nth-child(2),
+.table th:nth-child(3) {
+  background: rgba(106, 111, 106, 0.181);
+  padding: 4px;
+  color: rgba(240, 248, 255, 0.933);
+
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+
+.form h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  margin-right: 20px;
+  width: 50%;
+  /* width: calc(50% - 20px); */
+  /* display: inline-block; */
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 660px) {
+  .form-row {
+    display: block;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: rgb(255, 255, 255);
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
